@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>CV · Bryan Jaramillo</title>
+    <meta
+      name="description"
+      content="Hoja de vida de Bryan Alexander Jaramillo Elizalde — Senior Digital Agent · Educational Technology."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Iconos: Remix Icon (CDN) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <header class="nav">
+      <div class="container nav__inner">
+        <a class="brand" href="#top">BJ</a>
+        <nav class="menu">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="top" class="hero">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="overline">PORTFOLIO</p>
+        <h1>
+          Hi, I am <span class="gold" id="nameTitle">Bryan</span>
+        </h1>
+        <p id="summary" class="lead"></p>
+        <div class="hero__cta">
+          <a class="btn btn--gold" id="cvLink" href="#" target="_blank"
+            ><i class="ri-download-2-line"></i> Descargar CV</a
+          >
+          <a class="btn btn--outline" id="emailLink" href="#contact"
+            >Contáctame</a
+          >
+        </div>
+        <div class="hero__meta" id="heroMeta"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container grid-2 gap-6">
+        <div class="about__photo">
+          <div class="glow"></div>
+          <img id="aboutPhoto" src="hero-headshot.jpg" alt="Headshot" />
+        </div>
+        <div>
+          <p class="overline">ABOUT ME</p>
+          <h2 id="aboutHeadline"></h2>
+          <p class="role gold" id="aboutRole"></p>
+          <p class="muted" id="aboutSummary"></p>
+          <ul class="ticks" id="aboutBullets"></ul>
+
+          <div class="chip-row" id="contactChips"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES (diseño como la referencia) -->
+    <section id="services" class="section section--tinted">
+      <div class="container">
+        <h2><span class="under">Services</span></h2>
+        <div class="grid-3 gap-6" id="servicesGrid">
+          <!-- 6 tarjetas -->
+          <article class="card service">
+            <i class="ri-pencil-ruler-2-line gold"></i>
+            <h3>Sketching</h3>
+            <p>Wireframes y flujos para alinear al equipo y validar rápido.</p>
+          </article>
+          <article class="card service">
+            <i class="ri-layout-masonry-line gold"></i>
+            <h3>UX/UI Design</h3>
+            <p>Diseño de interfaces, patterns y prototipos de alta fidelidad.</p>
+          </article>
+          <article class="card service">
+            <i class="ri-collage-line gold"></i>
+            <h3>Product Design</h3>
+            <p>Descubrimiento, definición y roadmap con foco en impacto.</p>
+          </article>
+          <article class="card service">
+            <i class="ri-cpu-line gold"></i>
+            <h3>App Design</h3>
+            <p>Diseño web y móvil; performance y accesibilidad (a11y).</p>
+          </article>
+          <article class="card service">
+            <i class="ri-movie-line gold"></i>
+            <h3>Motion Graphics</h3>
+            <p>Micro-interacciones y transiciones con sentido.</p>
+          </article>
+          <article class="card service">
+            <i class="ri-smartphone-line gold"></i>
+            <h3>Responsive Design</h3>
+            <p>Layouts fluidos y escalables (mobile-first).</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2><span class="under">My Skills</span></h2>
+        <div id="skillsList" class="skills"></div>
+
+        <h3 class="mt-24">Otros conocimientos</h3>
+        <div id="otherKnowledge" class="chip-row mt-8"></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section section--tinted">
+      <div class="container">
+        <h2><span class="under">Experience</span></h2>
+        <div id="experienceList" class="timeline"></div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2><span class="under">Education</span></h2>
+        <div id="educationList" class="timeline"></div>
+      </div>
+    </section>
+
+    <!-- CERTS & LANGS -->
+    <section class="section section--tinted">
+      <div class="container grid-2 gap-6">
+        <div>
+          <h2><span class="under">Certifications</span></h2>
+          <div id="certsList" class="list-cards"></div>
+        </div>
+        <div>
+          <h2><span class="under">Languages</span></h2>
+          <div id="langsList" class="list-cards"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2><span class="under">Contact</span></h2>
+        <div class="contact-grid">
+          <a id="emailChip" class="chip" href="#">
+            <i class="ri-mail-line"></i><span></span>
+          </a>
+          <a id="phoneChip" class="chip" href="#">
+            <i class="ri-phone-line"></i><span></span>
+          </a>
+          <a id="locationChip" class="chip" href="#" onclick="return false;">
+            <i class="ri-map-pin-line"></i><span></span>
+          </a>
+          <a id="githubChip" class="chip" href="#" target="_blank">
+            <i class="ri-github-line"></i><span>GitHub</span>
+          </a>
+          <a id="linkedinChip" class="chip" href="#" target="_blank">
+            <i class="ri-linkedin-line"></i><span>LinkedIn</span>
+          </a>
+          <a id="cvChip" class="chip" href="#" target="_blank">
+            <i class="ri-file-download-line"></i><span>CV (PDF)</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        © <span id="year"></span> <span id="nameFoot"></span>. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
