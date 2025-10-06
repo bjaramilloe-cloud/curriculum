@@ -18,7 +18,7 @@ const CV = {
   },
   about: {
     photo: "hero-headshot.jpg",
-    headline: "Hola! Soy Bryan Jaramillo",
+    headline: "Bienvenido! Soy Bryan",
     role: "Ingeniero en Software / Project Manager",
     bullets: [
       "Experiencia en proyectos de transformación digital con AWS",
