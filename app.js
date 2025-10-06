@@ -90,7 +90,6 @@ const CV = {
     "Ciberseguridad",
     "LMS",
     "Ethical Hacking",
-    "Laravel",
     "Composer",
     "AWS",
     "Arquitectura de nube",
@@ -118,7 +117,7 @@ const CV = {
     },
     {
       school: "Universidad Central del Ecuador",
-      degree: "Licenciado en Ciencias de la Informática",
+      degree: "Ingeniero en Sistemas",
       period: "2019-04-01 – 2024-05-01",
       details: [],
     },
@@ -162,7 +161,7 @@ const CV = {
       year: 2025,
     },
     {
-      name: "WS User Group Ecuador (member)",
+      name: "AWS User Group Ecuador (member)",
       issuer: "AWS User Group Ecuador",
       year: 2024,
     },
